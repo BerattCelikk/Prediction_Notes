@@ -2,26 +2,26 @@
 
 This document provides information about various methods used for cryptocurrency price prediction. The cryptocurrency market is known for its volatility and dynamic nature; therefore, different techniques and models have been developed to make accurate predictions.
 
-## 📚 Table of Contents
+## Table of Contents
 
-- [🔍 Introduction](#introduction)
-- [📊 Models Used](#models-used)
-  - [📈 Linear Regression](#linear-regression)
-  - [📈 SARIMA](#sarima)
-  - [📉 ARIMA](#arima)
-- [🚀 Advanced Models](#advanced-models)
-  - [💻 LSTM](#lstm)
-  - [📅 Prophet](#prophet)
-  - [🌳 XGBoost](#xgboost)
-  - [🌲 Random Forest](#random-forest)
-  - [📉 GARCH](#garch)
-- [⚙️ Enhancement Techniques](#enhancement-techniques)
-  - [📊 Error Metrics](#error-metrics)
-  - [✅ Feature Selection](#feature-selection)
-- [🔍 Analysis Methods](#analysis-methods)
-  - [📈 Technical Analysis](#technical-analysis)
-  - [📊 Fundamental Analysis](#fundamental-analysis)
-- [📌 Conclusion](#conclusion)
+- [Introduction](#introduction)
+- [Models Used](#models-used)
+  - [Linear Regression](#linear-regression)
+  - [SARIMA](#sarima)
+  - [ARIMA](#arima)
+- [Advanced Models](#advanced-models)
+  - [LSTM](#lstm)
+  - [Prophet](#prophet)
+  - [XGBoost](#xgboost)
+  - [Random Forest](#random-forest)
+  - [GARCH](#garch)
+- [Enhancement Techniques](#enhancement-techniques)
+  - [Error Metrics](#error-metrics)
+  - [Feature Selection](#feature-selection)
+- [Analysis Methods](#analysis-methods)
+  - [Technical Analysis](#technical-analysis)
+  - [Fundamental Analysis](#fundamental-analysis)
+- [Conclusion](#conclusion)
 
 ## 🔍 Introduction
 
