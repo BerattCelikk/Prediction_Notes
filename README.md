@@ -2,6 +2,8 @@
 
 This document provides a comprehensive overview of various methods used for cryptocurrency price prediction. Given the volatility and dynamic nature of the cryptocurrency market, different techniques and models have been developed to enhance prediction accuracy. This guide aims to assist investors and traders in understanding these methodologies for informed decision-making.
 
+> **Disclaimer:** This document is for informational purposes only and does not constitute financial advice. Readers should conduct their own research and consult with a financial advisor before making investment decisions.
+
 ## 📚 Table of Contents
 
 - [🔍 Introduction](#introduction)
@@ -122,4 +124,4 @@ The various models and techniques available for cryptocurrency predictions offer
 
 ---
 
-This document provides a general overview of cryptocurrency prediction techniques. For detailed analyses and practical applications, further reading and research into relevant literature are recommended.
+This document provides a general overview of cryptocurrency prediction techniques. For detailed analyses and practical applications, further reading and research into relevant literature are recommended. 
