@@ -151,6 +151,3 @@ Linear regression can serve as an effective prediction model across various fiel
 
 
 ---
-
-
-
