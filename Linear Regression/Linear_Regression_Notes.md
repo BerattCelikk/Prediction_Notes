@@ -83,8 +83,8 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 
 # Make predictions
-predictions = model.predict(X_test) '''
-
+predictions = model.predict(X_test)
+```
 4. Model Training 📈
 
 Use 70-80% of the data for training your model.
