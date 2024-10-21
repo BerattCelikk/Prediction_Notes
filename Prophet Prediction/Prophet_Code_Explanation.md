@@ -44,7 +44,6 @@ This project implements a time series forecasting model to predict Bitcoin price
 11. ⚠️ Notes
 
 
-12. 📜 References
 
 
 
