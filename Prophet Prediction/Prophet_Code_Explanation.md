@@ -1,3 +1,5 @@
+---
+
 📈 Bitcoin Price Prediction Using Prophet
 
 🥇 Overview
@@ -212,7 +214,7 @@ r2 = r2_score(actual_values, predicted_values)  # Calculate R² Score
 
 Mean Absolute Error (MAE): Measures the average magnitude of the errors in a set of predictions, without considering their direction.
 
-Mean Squared Error (MSE): Measures the average of the squares of the errors—i.e., the average squared difference between estimated values and actual value.
+Mean Squared Error (MSE): Measures the average of the squares of the errors—i.e., the average squared difference between estimated values and actual values.
 
 R² Score: Indicates the proportion of the variance in the dependent variable that is predictable from the independent variable(s).
 
@@ -264,5 +266,42 @@ The plot illustrates the actual closing prices (in blue), predicted values (in o
 At the end of the execution, the last seven days of predictions, error metrics, and the last closing price are printed.
 
 # Print summary of results
-print(f"Predicted Values for the Next Week: {
+print(f"Predicted Values for the Next Week: {predicted_values}")
+print(f"Last Closing Price: {actual_values[-1]}")
+print(f"Mean Absolute Error (MAE): {mae:.2f}")
+print(f"Mean Squared Error (MSE): {mse:.2f}")
+print(f"R² Score: {r2:.2f}")
+
+
+---
+
+🔮 Future Work
+
+Explore Additional Features: Investigate the impact of including additional features such as trading volume, social media sentiment analysis, and macroeconomic indicators to enhance prediction accuracy.
+
+Model Comparison: Test and compare various forecasting models (e.g., ARIMA, LSTM) to identify which provides the best performance for Bitcoin price prediction.
+
+Real-Time Predictions: Implement a real-time prediction system that updates forecasts based on the latest available data.
+
+User Interface Development: Create a user-friendly application that allows users to visualize predictions and interact with the model.
+
+Risk Analysis: Conduct a thorough risk analysis to better understand potential downsides and market volatility associated with Bitcoin investments.
+
+
+
+---
+
+⚠️ Notes
+
+Disclaimer: This project is for educational purposes only and does not constitute financial advice. Users are encouraged to conduct their own research before making investment decisions.
+
+Data Limitations: The accuracy of the predictions depends heavily on the quality and range of historical data. Sudden market changes and external factors may lead to unexpected results.
+
+
+---
+
+
+
+
+
 
