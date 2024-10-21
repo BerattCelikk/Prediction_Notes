@@ -65,7 +65,7 @@ Collect relevant data through:
 
 Example code in Python:
 
-```python
+'''python
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -84,8 +84,8 @@ model.fit(X_train, y_train)
 
 # Make predictions
 predictions = model.predict(X_test) 
-
 '''
+
 
 4. Model Training 📈
 
