@@ -1,38 +1,71 @@
-# 📈 Bitcoin Price Prediction Using Prophet
+📈 Bitcoin Price Prediction Using Prophet
 
-## 🥇 Overview
-This project implements a time series forecasting model to predict Bitcoin prices for the upcoming week using the **Prophet** library. By leveraging historical data sourced from Yahoo Finance, we can gain insights into future price trends and evaluate the model's performance through various metrics. The goal is to provide a robust forecasting tool that can assist in understanding market behavior.
+🥇 Overview
 
----
+This project implements a time series forecasting model to predict Bitcoin prices for the upcoming week using the Prophet library. By leveraging historical data sourced from Yahoo Finance, we can gain insights into future price trends and evaluate the model's performance through various metrics. The goal is to provide a robust forecasting tool that can assist in understanding market behavior.
 
-## 🔍 Table of Contents
-1. [🛠️ Prerequisites](#-prerequisites)
-2. [📦 Getting Started](#-getting-started)
-3. [📊 Data Fetching](#-data-fetching)
-4. [🧹 Data Preparation](#-data-preparation)
-5. [📅 Splitting Data](#-splitting-data)
-6. [📈 Creating and Fitting the Model](#-creating-and-fitting-the-model)
-7. [🧪 Evaluating Predictions](#-evaluating-predictions)
-8. [📊 Visualizing the Results](#-visualizing-the-results)
-9. [📝 Results Summary](#-results-summary)
-10. [🔮 Future Work](#-future-work)
-11. [⚠️ Notes](#-notes)
-12. [📜 References](#-references)
 
 ---
 
-## 🛠️ Prerequisites
+🔍 Table of Contents
+
+1. 🛠️ Prerequisites
+
+
+2. 📦 Getting Started
+
+
+3. 📊 Data Fetching
+
+
+4. 🧹 Data Preparation
+
+
+5. 📅 Splitting Data
+
+
+6. 📈 Creating and Fitting the Model
+
+
+7. 🧪 Evaluating Predictions
+
+
+8. 📊 Visualizing the Results
+
+
+9. 📝 Results Summary
+
+
+10. 🔮 Future Work
+
+
+11. ⚠️ Notes
+
+
+12. 📜 References
+
+
+
+
+---
+
+🛠️ Prerequisites
+
 To run this project, make sure you have the following Python packages installed:
 
-- `yfinance`: For fetching historical financial data.
-- `pandas`: For data manipulation and analysis.
-- `prophet`: For time series forecasting.
-- `matplotlib`: For data visualization.
-- `scikit-learn`: For model evaluation metrics.
+yfinance: For fetching historical financial data.
+
+pandas: For data manipulation and analysis.
+
+prophet: For time series forecasting.
+
+matplotlib: For data visualization.
+
+scikit-learn: For model evaluation metrics.
+
 
 You can install these packages using pip:
 
-```bash
 pip install yfinance pandas prophet matplotlib scikit-learn
 
 
@@ -224,12 +257,12 @@ plt.show()  # Show the plot
 The plot illustrates the actual closing prices (in blue), predicted values (in orange), and the prediction intervals (in gray). A vertical red line marks today's date for reference.
 
 
-
 ---
 
 📝 Results Summary
 
 At the end of the execution, the last seven days of predictions, error metrics, and the last closing price are printed.
 
-# Print
+# Print summary of results
+print(f"Predicted Values for the Next Week: {
 
