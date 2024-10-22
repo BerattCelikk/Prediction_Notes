@@ -1,10 +1,13 @@
 ---
 
-🚀 Bitcoin Price Prediction Using the SARIMA Model
+🚀 BITCOIN PRICE PREDICTION USING THE SARIMA MODEL
 
 This Python script employs the SARIMA (Seasonal Autoregressive Integrated Moving Average) model to predict Bitcoin prices for the upcoming week. It leverages historical price data sourced from Yahoo Finance, trains the SARIMA model on this data, and generates forecasts for the next seven days.
 
-📥 1. Downloading Bitcoin Data
+
+---
+
+📥 1. DOWNLOADING BITCOIN DATA
 
 We begin by importing necessary libraries and downloading historical Bitcoin price data. The time range is set to cover the last five years.
 
@@ -47,14 +50,14 @@ end_date: Set to the current date.
 
 start_date: Calculated as five years prior to the current date.
 
+
+
 The closing prices are extracted for model training.
-
-
 
 
 ---
 
-📊 2. Training the SARIMA Model
+📊 2. TRAINING THE SARIMA MODEL
 
 Next, we initialize and fit the SARIMA model using the historical closing prices of Bitcoin. SARIMA incorporates seasonality into the traditional ARIMA model.
 
@@ -89,7 +92,7 @@ s = 7: The length of the seasonal cycle (weekly seasonality).
 
 ---
 
-📅 3. Forecasting the Next 7 Days
+📅 3. FORECASTING THE NEXT 7 DAYS
 
 After training the model, we generate forecasts for the next seven days, starting from the day following the last available data point.
 
@@ -114,7 +117,7 @@ forecast_values: Contains the predicted closing prices for the next week.
 
 ---
 
-🗓️ 4. Combining Historical and Forecasted Data
+🗓️ 4. COMBINING HISTORICAL AND FORECASTED DATA
 
 To visualize both historical and forecasted data, we combine them into a single dataset.
 
@@ -134,7 +137,7 @@ combined_values: A list that contains both historical and forecast price values.
 
 ---
 
-🔮 5. Printing the Forecasted Results
+🔮 5. PRINTING THE FORECASTED RESULTS
 
 We then print the forecasted Bitcoin prices for the next seven days.
 
@@ -152,7 +155,7 @@ Date: 2024-10-23, Predicted Price: 67669.15 USD
 
 ---
 
-📉 6. Printing the Last Week's Actual Closing Prices
+📉 6. PRINTING THE LAST WEEK'S ACTUAL CLOSING PRICES
 
 To evaluate the model's accuracy, we also print the actual Bitcoin closing prices for the last week.
 
@@ -170,7 +173,7 @@ Date: 2024-10-15, Actual Closing Price: 67041.11 USD
 
 ---
 
-📈 7. Plotting Historical and Forecasted Data
+📈 7. PLOTTING HISTORICAL AND FORECASTED DATA
 
 Finally, we visualize the historical and forecasted Bitcoin prices using Matplotlib.
 
@@ -204,7 +207,7 @@ Vertical Line: Indicates the transition from historical data to forecast.
 
 ---
 
-📝 Summary
+📝 SUMMARY
 
 Historical Data: Downloaded using yfinance, encompassing the past five years of Bitcoin closing prices.
 
