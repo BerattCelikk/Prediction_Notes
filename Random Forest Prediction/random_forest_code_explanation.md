@@ -1,3 +1,6 @@
+
+---
+
 🌟 Bitcoin Price Prediction Using Random Forest Model 🌟
 
 <p align="center">
@@ -34,14 +37,7 @@ We retrieve the Bitcoin price data from Yahoo Finance starting from January 1, 2
 
 <p align="center">
 In this step, we create several important features:
-</p>Return: The daily percentage change in the closing price.
-
-Volatility: 7-day rolling standard deviation of returns.
-
-Moving Averages (MA): Calculate 5-day, 10-day, and 30-day moving averages to smooth out short-term fluctuations.
-
-
-data['Return'] = data['Close'].pct_change()  # Daily return
+</p>data['Return'] = data['Close'].pct_change()  # Daily return
 data['Volatility'] = data['Return'].rolling(window=7).std()  # 7-day rolling volatility
 data['MA_5'] = data['Close'].rolling(window=5).mean()  # 5-day moving average
 data['MA_10'] = data['Close'].rolling(window=10).mean()  # 10-day moving average
@@ -67,8 +63,6 @@ Next, we prepare the dataset by selecting the relevant features. The target vari
 </p>X = data[['Return', 'Volatility', 'MA_5', 'MA_10', 'MA_30']]  # Features
 y = data['Close'].shift(-1)  # Target variable (shifted closing price)
 
-We then split the data into training and testing sets for model evaluation.
-
 X_train, X_test, y_train, y_test = train_test_split(X[:-1], y[:-1], test_size=0.2, random_state=42)
 
 📝 Explanation:
@@ -93,8 +87,6 @@ We tune the Random Forest model using **GridSearchCV**, testing different number
 }
 grid_search = GridSearchCV(RandomForestRegressor(random_state=42), param_grid, cv=3)
 grid_search.fit(X_train, y_train)  # Train the model
-
-After training, we retrieve the best model based on the grid search.
 
 best_model = grid_search.best_estimator_  # Best model
 
@@ -123,6 +115,7 @@ print(f'Test MSE: {mse}')
 Mean Squared Error (MSE) is a commonly used loss function that tells us how well the model’s predictions match the actual values. The lower the MSE, the better the model.
 
 
+
 ---
 
 📅 Step 7: Predicting Future Prices
@@ -145,6 +138,7 @@ for day in range(7):  # Predict for 7 days
 Iterative Predictions: We generate predictions one day at a time, using the model's previous prediction to update the feature set.
 
 
+
 ---
 
 📊 Step 8: Visualizing Results
@@ -156,9 +150,6 @@ plt.plot(data.index, data['Close'], label='Historical Closing Prices', color='bl
 
 future_dates = [data.index[-1] + timedelta(days=i) for i in range(1, 8)]  # Future dates
 plt.plot(future_dates, future_predictions, label='Predicted Prices', color='orange', marker='o')  # Future predictions
-
-# Optionally compare with actual prices
-plt.scatter(last_week_data.index, last_week_data['Close'], color='green', label='Actual Prices')  # Actual prices
 
 plt.title('Bitcoin Closing Prices and Daily Predictions')
 plt.xlabel('Date')
@@ -175,8 +166,6 @@ Blue Line: Historical Bitcoin closing prices.
 
 Orange Line: Predicted prices for the next 7 days.
 
-Green Dots: Actual prices for the last week, used to compare with predictions.
-
 
 
 ---
@@ -185,7 +174,5 @@ Green Dots: Actual prices for the last week, used to compare with predictions.
 
 <p align="center">
 In this project, we successfully built a **Random Forest Regressor** model to predict Bitcoin's future prices. We also explored feature engineering and hyperparameter tuning to improve the model's accuracy. However, remember that this is not financial advice; cryptocurrency markets can be highly volatile and unpredictable. Stay safe! 📉📈
-</p>Happy Coding! 😎✨
-
-
+</p>
 ---
