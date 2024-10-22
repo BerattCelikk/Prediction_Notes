@@ -1,6 +1,6 @@
 ---
 
-📊 SARIMA MODEL: A COMPREHENSIVE GUIDE
+📊 SARIMA MODEL
 
 The Seasonal Autoregressive Integrated Moving Average (SARIMA) model is a powerful statistical tool for time series forecasting. By integrating seasonality into the ARIMA model, SARIMA effectively captures both non-seasonal and seasonal behaviors in time series data, making it particularly useful for datasets exhibiting periodic fluctuations.
 
