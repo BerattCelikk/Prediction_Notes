@@ -9,7 +9,7 @@ The Seasonal Autoregressive Integrated Moving Average (SARIMA) model is a powerf
 
 🔍 WHAT IS SARIMA?
 
-SARIMA extends the traditional ARIMA model by incorporating seasonal components. This extension allows the model to account for patterns that repeat over specific intervals, such as daily, weekly, or yearly cycles.
+SARIMA extends the traditional ARIMA model by incorporating seasonal components. This allows the model to account for patterns that repeat over specific intervals, such as daily, weekly, or yearly cycles.
 
 Key Components of SARIMA
 
