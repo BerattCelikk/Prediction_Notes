@@ -1,4 +1,3 @@
-
 ---
 
 🌟 Bitcoin Price Prediction Using Random Forest Model 🌟
