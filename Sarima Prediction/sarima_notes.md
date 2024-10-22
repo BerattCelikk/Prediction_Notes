@@ -1,11 +1,15 @@
 ---
 
-<div style="text-align: center; font-size: 2em; font-weight: bold;">📊 SARIMA MODEL: A COMPREHENSIVE GUIDE</div>The Seasonal Autoregressive Integrated Moving Average (SARIMA) model is a powerful statistical tool for time series forecasting. By integrating seasonality into the ARIMA model, SARIMA effectively captures both non-seasonal and seasonal behaviors in time series data, making it particularly useful for datasets exhibiting periodic fluctuations.
+📊 SARIMA MODEL: A COMPREHENSIVE GUIDE
+
+The Seasonal Autoregressive Integrated Moving Average (SARIMA) model is a powerful statistical tool for time series forecasting. By integrating seasonality into the ARIMA model, SARIMA effectively captures both non-seasonal and seasonal behaviors in time series data, making it particularly useful for datasets exhibiting periodic fluctuations.
 
 
 ---
 
-<div style="text-align: center; font-size: 1.5em; font-weight: bold;">🔍 WHAT IS SARIMA?</div>SARIMA extends the traditional ARIMA model by incorporating seasonal components. This extension allows the model to account for patterns that repeat over specific intervals, such as daily, weekly, or yearly cycles.
+🔍 WHAT IS SARIMA?
+
+SARIMA extends the traditional ARIMA model by incorporating seasonal components. This extension allows the model to account for patterns that repeat over specific intervals, such as daily, weekly, or yearly cycles.
 
 Key Components of SARIMA
 
@@ -35,7 +39,9 @@ SARIMA Notation
 
 The SARIMA model is represented as:
 
-<div style="text-align: center; font-size: 1.5em;">SARIMA(p, d, q)(P, D, Q)<sub>s</sub></div>Where:
+SARIMA(p, d, q)(P, D, Q)<sub>s</sub>
+
+Where:
 
  are the non-seasonal parameters.
 
@@ -47,7 +53,9 @@ The SARIMA model is represented as:
 
 ---
 
-<div style="text-align: center; font-size: 1.5em; font-weight: bold;">📈 WHEN TO USE SARIMA</div>Ideal Scenarios for SARIMA Application
+📈 WHEN TO USE SARIMA
+
+Ideal Scenarios for SARIMA Application
 
 Seasonal Data: Use SARIMA when your time series data exhibits seasonal patterns, such as sales figures during holidays, monthly temperature readings, or daily web traffic.
 
@@ -68,20 +76,19 @@ Seasonal Decomposition: Decompose your time series into trend, seasonal, and res
 
 ---
 
-<div style="text-align: center; font-size: 1.5em; font-weight: bold;">🛠️ HOW TO IMPLEMENT SARIMA</div>Step 1: Data Preparation
+🛠️ HOW TO IMPLEMENT SARIMA
+
+Step 1: Data Preparation
 
 1. Load Your Data: Ensure your time series data is in a suitable format, typically as a pandas DataFrame.
-
-
 
 import pandas as pd
 
 # Load data
 data = pd.read_csv('your_timeseries_data.csv', parse_dates=['date'], index_col='date')
 
+
 2. Check for Stationarity: Use statistical tests like the Augmented Dickey-Fuller (ADF) test to verify if your data is stationary.
-
-
 
 from statsmodels.tsa.stattools import adfuller
 
@@ -91,11 +98,11 @@ print('p-value:', result[1])
 
 A p-value below 0.05 typically indicates that the time series is stationary.
 
+
+
 Step 2: Model Selection
 
 1. Identify Parameters: Use ACF (Autocorrelation Function) and PACF (Partial Autocorrelation Function) plots to determine appropriate values for  and .
-
-
 
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 import matplotlib.pyplot as plt
@@ -103,6 +110,7 @@ import matplotlib.pyplot as plt
 plot_acf(data['value'])
 plot_pacf(data['value'])
 plt.show()
+
 
 2. Seasonal Parameter Selection: Similarly, assess ACF and PACF plots for seasonal parameters  and .
 
@@ -148,7 +156,9 @@ conf_int = forecast.conf_int()
 
 ---
 
-<div style="text-align: center; font-size: 1.5em; font-weight: bold;">🌟 TIPS FOR WORKING WITH SARIMA</div>1. Differencing: Ensure your data is stationary. If it’s not, apply differencing (both regular and seasonal) until you achieve stationarity.
+🌟 TIPS FOR WORKING WITH SARIMA
+
+1. Differencing: Ensure your data is stationary. If it’s not, apply differencing (both regular and seasonal) until you achieve stationarity.
 
 
 2. Seasonality: Utilize seasonal decomposition techniques (like STL decomposition) to analyze seasonal components before modeling. This can provide insights into the seasonal nature of your data.
@@ -175,7 +185,9 @@ plt.show()
 
 ---
 
-<div style="text-align: center; font-size: 1.5em; font-weight: bold;">📊 CONCLUSION</div>The SARIMA model is a versatile and robust approach for time series forecasting, particularly suited for datasets with seasonal patterns. By understanding its components, carefully selecting parameters, and implementing effective evaluation techniques, you can significantly enhance your forecasting accuracy.
+📊 CONCLUSION
+
+The SARIMA model is a versatile and robust approach for time series forecasting, particularly suited for datasets with seasonal patterns. By understanding its components, carefully selecting parameters, and implementing effective evaluation techniques, you can significantly enhance your forecasting accuracy.
 
 Further Reading:
 
