@@ -1,4 +1,3 @@
-
 ---
 
 🌟 Bitcoin Price Prediction Using Random Forest Model 🌟
@@ -176,3 +175,4 @@ Orange Line: Predicted prices for the next 7 days.
 In this project, we successfully built a **Random Forest Regressor** model to predict Bitcoin's future prices. We also explored feature engineering and hyperparameter tuning to improve the model's accuracy. However, remember that this is not financial advice; cryptocurrency markets can be highly volatile and unpredictable. Stay safe! 📉📈
 </p>
 ---
+
